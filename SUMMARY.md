@@ -1,22 +1,22 @@
 # Summary
 
-* [新手引导](新手引导/README.md)
+* 新手引导
 	* [关于DaoCloud](新手引导/AboutDaoCloud.md)
 	* [Docker新手入门 30min](新手引导/DockerTutorial.md)
 	* [DaoCloud加速器](新手引导/DaoClouDMirrorAccelerator.md)
 	<!-- * [容器化应用交付](新手引导/README.md) -->
 	* [DaoCloud能做什么](新手引导/benefits.md)
 	* [DaoCloud平台的创新](新手引导/DaoCloud-2.md)
-	* [视频演示](新手引导/README.md)
+	* [视频演示](新手引导/demo.md)
 	* [词汇表](新手引导/vocabulary.md)
-* [快速实践](快速实践/README.md)
+* 快速实践
 	* [注册和管理DaoCloud账号](快速实践/register-account.md)
 	* [快速创建应用：Ghost](快速实践/ghost-blog.md)
-	* [快速创建应用：Ghost](快速实践/deer-resume.md)
-	* [快速创建应用：Ghost](快速实践/earth.md)
-	* [快速创建应用：Ghost](快速实践/phpmyadmin.md)
-	* [快速创建应用：Ghost](快速实践/mongo-express.md)
-* [程序员指南](程序员指南/README.md)
+	* [快速创建应用：DeerCV](快速实践/deer-resume.md)
+	* [快速创建应用：Earth](快速实践/earth.md)
+	* [快速创建应用：phpMyAdmin](快速实践/phpmyadmin.md)
+	* [快速创建应用：mongo-express](快速实践/mongo-express.md)
+* 程序员指南
 	* [在DaoCloud上快速发布Java应用](程序员指南/README.md)
 	* [在DaoCloud上快速发布Golang应用](程序员指南/README.md)
 	* [在DaoCloud上快速发布Phyon应用](程序员指南/README.md)
@@ -24,7 +24,7 @@
 	* [在DaoCloud上快速发布PHP应用](程序员指南/README.md)
 	* [在DaoCloud上快速发布XXX应用](程序员指南/README.md)
 	* [什么是持续集成](程序员指南/README.md)
-* [产品功能](产品功能/README.md)
+* 产品功能
 	* [代码构建](产品功能/code.md)
 	* [持续集成](产品功能/configure-daocloud-ci.md)
 	* [daocloud.yml文件格式](产品功能/daocloud-yml.md)
