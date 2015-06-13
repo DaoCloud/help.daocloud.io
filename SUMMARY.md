@@ -1,35 +1,35 @@
 # Summary
 
-* 新手引导
-	* [关于DaoCloud](新手引导/AboutDaoCloud.md)
-	* [Docker新手入门 30min](新手引导/DockerTutorial.md)
-	* [DaoCloud加速器](新手引导/DaoClouDMirrorAccelerator.md)
-	<!-- * [容器化应用交付](新手引导/README.md) -->
-	* [DaoCloud能做什么](新手引导/benefits.md)
-	* [DaoCloud平台的创新](新手引导/DaoCloud-2.md)
-	* [视频演示](新手引导/demo.md)
-	* [词汇表](新手引导/vocabulary.md)
-* 快速实践
-	* [注册和管理DaoCloud账号](快速实践/register-account.md)
-	* [快速创建应用：Ghost](快速实践/ghost-blog.md)
-	* [快速创建应用：DeerCV](快速实践/deer-resume.md)
-	* [快速创建应用：Earth](快速实践/earth.md)
-	* [快速创建应用：phpMyAdmin](快速实践/phpmyadmin.md)
-	* [快速创建应用：mongo-express](快速实践/mongo-express.md)
-* 程序员指南
-	* [在DaoCloud上快速发布Java应用](程序员指南/README.md)
-	* [在DaoCloud上快速发布Golang应用](程序员指南/README.md)
-	* [在DaoCloud上快速发布Phyon应用](程序员指南/README.md)
-	* [在DaoCloud上快速发布Ruby应用](程序员指南/README.md)
-	* [在DaoCloud上快速发布PHP应用](程序员指南/README.md)
-	* [在DaoCloud上快速发布XXX应用](程序员指南/README.md)
-	* [什么是持续集成](程序员指南/README.md)
-* 产品功能
-	* [代码构建](产品功能/code.md)
-	* [持续集成](产品功能/configure-daocloud-ci.md)
-	* [daocloud.yml文件格式](产品功能/daocloud-yml.md)
-	* [镜像仓库](产品功能/repos.md)
-	* [创建和管理数据服务](产品功能/services.md)
-	* [自有主机](产品功能/_-1.md)
-	* [应用部署](产品功能/deploy.md)
-	* [用户中心](产品功能/profile.md)
+* [新手引导](tutorial/README.md)
+	* [关于DaoCloud](tutorial/AboutDaoCloud.md)
+	<!-- * [容器化应用交付](tutorial/README.md) -->
+	* [DaoCloud能做什么](tutorial/benefits.md)
+	* [DaoCloud平台的创新](tutorial/DaoCloud-2.md)
+	* [注册和管理DaoCloud账号](practice/register-account.md)
+	* [Docker新手入门 30min](tutorial/DockerTutorial.md)
+	* [DaoCloud加速器](tutorial/DaoClouDMirrorAccelerator.md)
+	* [DaoCloud视频演示](tutorial/demo.md)
+	* [词汇表](tutorial/vocabulary.md)
+* [产品功能](function/README.md)
+	* [用户中心](function/profile.md)
+	* [代码构建](function/code.md)
+	* [持续集成](function/configure-daocloud-ci.md)
+	* [daocloud.yml文件格式](function/daocloud-yml.md)
+	* [镜像仓库](function/repos.md)
+	* [创建和管理数据服务](function/services.md)
+	* [自有主机](function/_-1.md)
+	* [应用部署](function/deploy.md)
+* [快速实践](practice/README.md)
+	* [快速创建应用：Ghost](practice/ghost-blog.md)
+	* [快速创建应用：DeerCV](practice/deer-resume.md)
+	* [快速创建应用：Earth](practice/earth.md)
+	* [快速创建应用：phpMyAdmin](practice/phpmyadmin.md)
+	* [快速创建应用：mongo-express](practice/mongo-express.md)
+<!-- * 程序员指南 -->
+	<!-- * [在DaoCloud上快速发布Java应用](程序员指南/README.md) -->
+	<!-- * [在DaoCloud上快速发布Golang应用](程序员指南/README.md) -->
+	<!-- * [在DaoCloud上快速发布Phyon应用](程序员指南/README.md) -->
+	<!-- * [在DaoCloud上快速发布Ruby应用](程序员指南/README.md) -->
+	<!-- * [在DaoCloud上快速发布PHP应用](程序员指南/README.md) -->
+	<!-- * [在DaoCloud上快速发布XXX应用](程序员指南/README.md) -->
+	<!-- * [什么是持续集成](程序员指南/README.md) -->

@@ -12,7 +12,7 @@ DaoCloud CI是我们自主研发的CI执行引擎，目前支持如下语言和�
 
 ### 1. 准备持续集成需要的配置文件 
 
-您可以通过在代码根目录放置一个daocloud.yml文件来配置您的测试任务，请参考[`daocloud.yml`的格式](https://github.com/DaoCloud/daocloud-doc/blob/master/DaoCloudCI.md)以及我们维护在github上的[示例程序](https://github.com/DaoCloud?utf8=%E2%9C%93&query=sample)。
+您可以通过在代码根目录放置一个daocloud.yml文件来配置您的测试任务，请参考[`daocloud.yml`的格式](daocloud-yml.html)以及我们维护在github上的[示例程序](https://github.com/DaoCloud?utf8=%E2%9C%93&query=sample)。
 
 下面是一个配置文件示例：
 
