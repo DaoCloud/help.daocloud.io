@@ -25,11 +25,11 @@
 	* [快速创建应用：Earth](practice/earth.md)
 	* [快速创建应用：phpMyAdmin](practice/phpmyadmin.md)
 	* [快速创建应用：mongo-express](practice/mongo-express.md)
-<!-- * 程序员指南 -->
+* [开发指南](dev/README.md)
 	<!-- * [在DaoCloud上快速发布Java应用](程序员指南/README.md) -->
 	<!-- * [在DaoCloud上快速发布Golang应用](程序员指南/README.md) -->
 	<!-- * [在DaoCloud上快速发布Phyon应用](程序员指南/README.md) -->
 	<!-- * [在DaoCloud上快速发布Ruby应用](程序员指南/README.md) -->
-	<!-- * [在DaoCloud上快速发布PHP应用](程序员指南/README.md) -->
+	* [在DaoCloud上快速发布PHP应用](dev/php.md)
 	<!-- * [在DaoCloud上快速发布XXX应用](程序员指南/README.md) -->
 	<!-- * [什么是持续集成](程序员指南/README.md) -->
