@@ -16,7 +16,7 @@
 	* [持续集成](function/configure-daocloud-ci.md)
 	* [daocloud.yml文件格式](function/daocloud-yml.md)
 	* [镜像仓库](function/repos.md)
-	* [创建和管理数据服务](function/services.md)
+	* [服务集成](function/services.md)
 	* [自有主机](function/host.md)
 	* [应用部署](function/deploy.md)
 * [快速实践](practice/README.md)
