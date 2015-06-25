@@ -41,8 +41,26 @@ script:
 
 ### 2. Push代码
 
-任何对代码源的push操作将自动触发持续集成，例如：
+对代码源的push操作将自动触发持续集成，例如：
 
 ```
 git push
+```
+
+当push的最近一次commit信息中带有`[CI SKIP]`或者`[SKIP CI]`字段时，将略过此次push，不触发持续集成，例如：
+
+```
+git commit -m 'your message [CI SKIP]'
+git push
+```
+
+注意：`[CI SKIP]`和`[SKIP CI]`不区分大小写，以下形式都是合法的：
+```
+[ci skip]
+[CI SKIP]
+[Ci Skip]
+[ ci sKip ]
+[CI SKIp ]
+[Skip Ci]
+[skip ci ]
 ```
