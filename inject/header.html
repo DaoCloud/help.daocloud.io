@@ -19,15 +19,15 @@
 </nav>
 
 <script>
-var H_MENU = document.getElementById('nav-menu').children[0].clientHeight * 5;
-
 function toggleMenu () {
-  style = document.getElementById('nav-menu').style;
-  item = document.getElementById('nav-menu');
+  var menuHeight = document.getElementById('nav-menu').children[0].clientHeight * 5;
 
-  if (style.height == H_MENU + 'px')
+  var style = document.getElementById('nav-menu').style;
+  var item = document.getElementById('nav-menu');
+
+  if (style.height == menuHeight + 'px')
     style.height = '0';
   else
-    style.height = H_MENU + 'px';
+    style.height = menuHeight + 'px';
 }
 </script>
