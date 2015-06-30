@@ -3,7 +3,12 @@
     <a class="navbar-brand" href="https://www.daocloud.io/">
       <img src="https://dn-daoweb-resource.qbox.me/images/dashboard/daocloud-logo.svg" />
     </a>
-    <ul class="navbar-nav">
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <ul id="nav-menu" class="navbar-nav" style="height: 0;">
       <li><a href="https://dashboard.daocloud.io/">控制台</a></li>
       <li><a href="http://blog.daocloud.io/">博客</a></li>
       <li><a href="http://open.daocloud.io/">社区</a></li>
@@ -12,3 +17,17 @@
     </ul>
   </div>
 </nav>
+
+<script>
+var H_MENU = document.getElementById('nav-menu').children[0].clientHeight * 5;
+
+function toggleMenu () {
+  style = document.getElementById('nav-menu').style;
+  item = document.getElementById('nav-menu');
+
+  if (style.height == H_MENU + 'px')
+    style.height = '0';
+  else
+    style.height = H_MENU + 'px';
+}
+</script>
