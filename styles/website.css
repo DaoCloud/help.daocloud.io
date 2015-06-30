@@ -1,0 +1,46 @@
+body {
+  padding-top: 68px;
+}
+
+.container {
+  display: relative;
+}
+
+.navbar-fixed-top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 68px;
+  background-color: #3D444D;
+  z-index: 100;
+}
+
+.navbar-fixed-top > * {
+  vertical-align: middle;
+}
+
+.navbar-fixed-top * {
+  font-size: 18px;
+  color: #FFF;
+}
+
+.navbar-brand > img {
+  position: absolute;
+  top: calc(50% - 18px);
+  height: 36px;
+  margin-left: 36px;
+}
+
+ul.navbar-nav {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  margin: 0;
+  margin-right: 88px;
+  line-height: 68px; /* == navibar-height */
+}
+
+ul.navbar-nav > li {
+  display: inline-block;
+  margin-right: 24px;
+}
