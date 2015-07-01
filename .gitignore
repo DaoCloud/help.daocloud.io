@@ -1,8 +1,12 @@
 # generated static pages
 _book/
+dist/
 
 # the error file created by npm
 npm-debug.log
+
+# ignore uploading configuration
+qrsync.json
 
 # vim swap files
 *.swp
