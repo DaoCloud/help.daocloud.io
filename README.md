@@ -2,10 +2,10 @@
 
 ## 操作方法：
 
-* 构建执行 `sh build.sh`
-* 上传执行 `sh upload.sh`
-* 测试执行 `cd dist; python -m SimpleHTTPServer [端口号]` 并访问 `http://localhost:端口号/`
-* 清除执行 `rm -rf dist`
+* 构建执行 `make build`
+* 上传执行 `make upload`
+* 测试执行 `make test`
+* 清除执行 `make clean`
 
 注意：构建时请确保 `gitbook-cli` 已安装，上传时请确保 `qrsync.json` 已正确配置
       (注意：上传根目录为 **dist**)
@@ -23,7 +23,7 @@
  |   `- [...]      项目文档 (Markdown 文件)
  |- inject         注入的 HTML 文件
  |- dist           构建完成目录 (不在 Repo 中)
- |- build.sh       构建脚本
- |- upload.sh      上传脚本
+ |- Makefile       你要的 Makefile
+ |- [*.sh]         各种脚本
  `- README.md      这个说明文档
 ```
