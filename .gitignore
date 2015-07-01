@@ -1,3 +1,8 @@
-node_modules
+# generated static pages
 _book/
+
+# the error file created by npm
 npm-debug.log
+
+# vim swap files
+*.swp
