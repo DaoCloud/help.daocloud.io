@@ -33,8 +33,10 @@ body {
 }
 
 ul.navbar-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
   vertical-align: middle;
-  float: right;
   margin: 0;
   margin-right: 88px;
   line-height: 68px; /* == navibar-height */
@@ -86,6 +88,7 @@ ul.navbar-nav > li {
   }
 
   ul.navbar-nav {
+    position: static;
     display: block;
     overflow: hidden;
 
