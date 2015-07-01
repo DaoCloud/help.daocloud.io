@@ -1,7 +1,7 @@
 # Summary
 
+* [关于DaoCloud](README.md)
 * [新手引导](tutorial/README.md)
-	* [关于DaoCloud](tutorial/AboutDaoCloud.md)
 	<!-- * [容器化应用交付](tutorial/README.md) -->
 	* [DaoCloud能做什么](tutorial/benefits.md)
 	* [DaoCloud平台的创新](tutorial/DaoCloud-innovation.md)
