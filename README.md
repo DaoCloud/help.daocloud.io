@@ -1,7 +1,29 @@
-# 关于DaoCloud
+# DaoCloud 帮助手册
 
-DaoCloud是业界领先的企业级容器云平台和解决方案提供商，致力于以Docker为代表的容器技术，为企业打造面向下一代互联网应用的交付和运维平台，帮助客户实现云端持续创新。DaoCloud采用混合云模式，以云端SaaS化容器管理平台，对接各类主机资源，构建跨云跨网的容器主机资源池，提供全流程标准化的应用持续集成、镜像构建、发布管理和容器运维服务。DaoCloud在开发运维联动、渐进式混合云构建、大规模高并发集群、微服务架构设计、分布式应用运维等场景拥有丰富经验和成功案例。DaoCloud总部位于中国上海，并在北京设有分支机构。
+## 操作方法：
 
-联系我们： [info@daocloud.io](mailto:info@daocloud.io)
+* 构建执行 `sh build.sh`
+* 上传执行 `sh upload.sh`
+* 测试执行 `cd dist; python -m SimpleHTTPServer [端口号]` 并访问 `http://localhost:端口号/`
+* 清除执行 `rm -rf dist`
 
-媒体垂询： [media@daocloud.io](mailto:media@daocloud.io)
+注意：构建时请确保 `gitbook-cli` 已安装，上传时请确保 `qrsync.json` 已正确配置
+      (注意：上传根目录为 **dist**)
+
+## 目录结构
+
+```
+[项目目录]
+ |- src            项目源码
+ |   |- readme.io  旧链接重定向
+ |   |- styles     扩展的样式链表
+ |   |- img        图片
+ |   |- book.json  GitBook 项目配置
+ |   |- _book      构建临时目录 (不在 Repo 中)
+ |   `- [...]      项目文档 (Markdown 文件)
+ |- inject         注入的 HTML 文件
+ |- dist           构建完成目录 (不在 Repo 中)
+ |- build.sh       构建脚本
+ |- upload.sh      上传脚本
+ `- README.md      这个说明文档
+```
