@@ -8,5 +8,5 @@ set -e
 [ -f qrsync.json ] || { echo 'Please ensure you have `qrsync.json` configured!'; exit 1; }
 
 # upload with qrsync
-rm ~/.qrsync/
+rm -rf ~/.qrsync/
 qrsync qrsync.json
