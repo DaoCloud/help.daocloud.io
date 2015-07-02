@@ -23,4 +23,4 @@ mv _book/* ${BASEDIR}/dist/
 cd "${BASEDIR}"
 INJECT_HEADER=$(cat inject/header.html | sed ':a;N;$!ba;s/\n/\\n/g')
 find dist/ -name "*.html" -exec sed -i "s#<body>#<body>${INJECT_HEADER}#g" '{}' \;
-find dist/ -name "*.html" -exec sed -i "s#gitbook/images/favicon.ico#/img/favicon.ico#g" '{}' \;
+find dist/ -name "*.html" -exec sed -i "s#/gitbook/images/favicon.ico#/img/favicon.ico#g" '{}' \;
