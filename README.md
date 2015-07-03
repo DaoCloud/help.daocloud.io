@@ -41,6 +41,7 @@
 * URL PATH 链接格式统一采用标题的英语翻译小写并用字符 `-` 分割单词。
   - 如 `/section-name/subsection-name/topic-name`。
 * 文档内容风格参考 **[文案风格指南](http://open.leancloud.cn/copywriting-style-guide.html)**。
+* 修改章节的链接需要同步更新文档中其他章节的链接。
 
 ### 推送提交
 
