@@ -2,13 +2,14 @@
 
 ## 操作方法：
 
-* 构建执行 `make build`
-* 上传执行 `make upload`
-* 测试执行 `make test`
-* 清除执行 `make clean`
+* 构建执行 `make build`。
+* 上传执行 `make upload`。
+* 测试执行 `make test`。
+* 浏览执行 `make browse`。
+* 清除执行 `make clean`。
+* 构建 Docker 镜像使用 `Dockerfile`。
 
-注意：构建时请确保 `gitbook-cli` 已安装，上传时请确保 `qrsync.json` 已正确配置
-      (注意：上传根目录为 **dist**)
+> 注意：构建时请确保 `gitbook-cli` 已安装，上传时请 `qrsync.json` 配置上传目录为当前目录下的 **dist**。
 
 ## 目录结构
 
@@ -27,3 +28,12 @@
  |- [*.sh]         各种脚本
  `- README.md      这个说明文档
 ```
+
+## 写作规范
+
+* Markdown 主要使用 **[GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)**。
+  + 此外对于无序列表，第一层使用字符 `*`，第二层使用字符 `+`，第三层使用字符 `-`。
+  + 对于除了标题的列表应以句号结尾。
+* URL PATH 链接格式统一采用标题的英语翻译小写并用字符 `-` 分割单词。
+  - 如 `/section-name/subsection-name/topic-name`。
+* 内容文本风格参考 **[文案风格指南](http://open.leancloud.cn/copywriting-style-guide.html)**。
