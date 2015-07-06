@@ -25,7 +25,7 @@
 
 ### 打开应用URL，现在您可以使用DeerResume在线创建您的简历！
 
-一切就是这么简单，code to cloud，在几次鼠标点击中轻松完成！
+一切就是这么简单，「Code to Cloud」，在几次鼠标点击中轻松完成！
 如果您使用DeerResume创建了简历，也别忘了给DaoCloud发一份，请投掷简历到 [jobs@daocloud.io](jobs@daocloud.io)
 
 ![](http://blog.daocloud.io/wp-content/uploads/2015/05/app-deer.png)
