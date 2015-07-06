@@ -1,7 +1,7 @@
 # Summary
 
 <!-- TODO: 结构调整 -->
-<!-- TODO: 格式检查进度：Docker 新手入门 30 min -->
+<!-- TODO: 格式检查进度：服务集成 -->
 
 * [关于 DaoCloud](README.md)
 * [新手引导](tutorial/README.md)

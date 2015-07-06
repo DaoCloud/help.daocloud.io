@@ -2,7 +2,7 @@
 
 想快速上手DaoCloud？
 
-如果您已经迫不及待体验 DaoCloud 「code to cloud」 的便捷，请直接点击链接，访问 DaoCloud 的完整视频 Demo。DaoCloud 团队成员会在视频中为您详细讲解 Docker 化应用交付的思想，DaoCloud 使用的具体步骤。
+如果您已经迫不及待体验 DaoCloud 「Code to Cloud」的便捷，请直接点击链接，访问 DaoCloud 的完整视频 Demo。DaoCloud 团队成员会在视频中为您详细讲解 Docker 化应用交付的思想，DaoCloud 使用的具体步骤。
 
 <!-- TODO: 考虑使用嵌入式 HTML5 视频 -->
 
