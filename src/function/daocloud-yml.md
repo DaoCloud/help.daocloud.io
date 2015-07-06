@@ -1,4 +1,4 @@
-## daocloud.yml 文件格式
+## daocloud.yml
 
 DaoCloud CI 使用基于 Docker 的容器技术来运行您的测试任务，确保您的任务和其他租户的任务完全隔离并互不干扰。
 
