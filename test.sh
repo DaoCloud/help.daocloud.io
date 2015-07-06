@@ -7,9 +7,7 @@ set -e
 BASEDIR=$(dirname $(readlink -f $0))
 cd "${BASEDIR}"
 
-# ensure dist exist
-[ -d dist ] || { echo 'Directory `dist` does not exist!'; exit 1; }
+# TODO CI for checkstyle
+echo 'Not Implemented!' 1>&2
 
-# launch a small http server using python
-cd dist
-python -m SimpleHTTPServer 5080
+exit 1
