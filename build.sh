@@ -28,4 +28,15 @@ find dist/ -name "*.html" -exec sed -i "s#gitbook/images/favicon.ico#/img/favico
 sed -i "s#e(\"head\")\.html(f)#e(\"head title\").html(s.find(\"title\").html()),e(\"head link[rel=prev]\").attr(\"href\", s.find(\"link[rel=prev]\").attr(\"href\")),e(\"head link[rel=next]\").attr(\"href\", s.find(\"link[rel=next]\").attr(\"href\"))#g" dist/gitbook/app.js
 
 # redirect old url
-cp -r redirect/* dist/
+cat inject/redirect.list | while read line; do
+    [ "$(echo "$line" | grep -o '^.')" = '#' ] && continue
+
+    from=$(echo "$line" | grep -o '^[^ ]*')
+    to=$(echo "$line" | grep -o '[^ ]*$')
+
+    # recursively create parent directory
+    mkdir -p "dist/$(dirname $from)"
+
+    # inject redirection from template
+    sed "s#@@@#$to#g" inject/redirect.html > "dist/$from"
+done
