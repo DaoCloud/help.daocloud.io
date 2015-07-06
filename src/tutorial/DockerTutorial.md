@@ -178,7 +178,7 @@ deaaa8e60c9f  ubuntu:14.04  [...]    14 min ago  Up 1 sec           distracted_d
 
 ### 通过 Docker 运行你的 Web 应用，Step By Step
 
-代码文件请参考：[DaoCloud 搭建静态博客](https://github.com/lijianying10/DaoCloudStaticBlog) 以及 [整个研究过程参考](http://open.daocloud.io/build-and-deploy-the-thinnest-docker-image/)。
+代码文件请参考： **[DaoCloud 搭建静态博客](https://github.com/lijianying10/DaoCloudStaticBlog)** 以及 **[整个研究过程参考](http://open.daocloud.io/build-and-deploy-the-thinnest-docker-image/)**。
 
 Step 1：准备自己的互联网应用 - 参考文件中的 static 这个文件为编译好的 golang 应用程序。
 
@@ -305,7 +305,7 @@ progrium/busybox    latest   8cee90767cfe   4 months ago   4.789 MB
 
 #### 搜索需要的镜像
 
-推荐到 [Docker Hub Registry](https://registry.hub.docker.com/) 上搜索。
+推荐到 **[Docker Hub Registry](https://registry.hub.docker.com/)** 上搜索。
 
 但是也可以通过命令 `docker search 关键词` 进行搜索。
 
@@ -339,13 +339,13 @@ root# docker run -it -d -p 4000:4000 -v /root/blog/:/hexo --name hexo hexo3
 
 注意，在数据库应用中最需要根据配置文件将数据库持久化的位置放到宿主机中。
 
-对于开发更加详细的意见可以产考 [使用 Docker 做开发的建议团队工作流](http://www.philo.top/2015/06/04/DockerWorkflow/)。
+对于开发更加详细的意见可以产考 **[使用 Docker 做开发的建议团队工作流](http://www.philo.top/2015/06/04/DockerWorkflow/)**。
 
 为了使 Hexo 博客可以被宿主机以外的设备访问，这里使用 `-p` 参数来发布 Docker 的端口到宿主机中。
 
 ### Docker 学习建议：
 
-1. 在详细实践完成本文之后如果您有精力，并且英文阅读能力还不错请您移步到 [Docker官方文档](https://docs.docker.com/userguide/) 继续更深入的学习。
+1. 在详细实践完成本文之后如果您有精力，并且英文阅读能力还不错请您移步到 **[Docker官方文档](https://docs.docker.com/userguide/)** 继续更深入的学习。
 2. Docker 只是一种非常实用的工具，不要以 Docker 为目的去学习 Docker，重要的不是 Docker 而是您用 Docker 做什么。
 
 ### 总结

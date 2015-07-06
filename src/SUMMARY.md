@@ -1,17 +1,17 @@
 # Summary
 
 <!-- TODO: 结构调整 -->
-<!-- TODO: 格式检查进度：DaoCloud 账号的注册 -->
+<!-- TODO: 格式检查进度：Docker 新手入门 30 min -->
 
 * [关于 DaoCloud](README.md)
 * [新手引导](tutorial/README.md)
   + [DaoCloud 平台的优势](tutorial/benefits.md)
   + [DaoCloud 平台的创新](tutorial/DaoCloud-innovation.md)
   + [DaoCloud 账号的注册](practice/register-account.md)
-  + [DaoCloud 加速器](tutorial/DaoCloudMirrorAccelerator.md)
-  + [DaoCloud 视频演示](tutorial/demo.md)
+  + [DaoCloud 镜像加速器](tutorial/DaoCloudMirrorAccelerator.md)
+  + [DaoCloud 视频和演示](tutorial/demo.md)
+  + [DaoCloud 平台词汇表](tutorial/vocabulary.md)
   + [Docker 新手入门 30 min](tutorial/DockerTutorial.md)
-  + [词汇表](tutorial/vocabulary.md)
 * [产品功能](function/README.md)
   + [用户中心](function/profile.md)
   + [代码构建](function/code.md)
