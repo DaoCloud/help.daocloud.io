@@ -2,9 +2,9 @@
 
 <!-- TODO: 需要重构！很多内容应该放入 Q&A -->
 
-### DaoMirror
+### Docker 加速器
 
-DaoMirror 是 DaoCloud 推出的 Docker Hub Mirror 服务的官方名称。
+Docker 加速器是 DaoCloud 推出的 Docker Hub Mirror 服务的官方名称。
 
 Docker 官方对 Mirror 的定义：
 
@@ -15,8 +15,6 @@ Mirror 是 Docker Registry 的一种特殊类型，它起到了类似代理服�
 ### 加速器是什么？
 
 DaoCloud 加速器是我们为中国开发者提供的 Docker Hub Mirror 服务。DaoCloud 的博客有两篇文章非常详细的介绍了 Docker Hub Mirror 的工作机制，和 DaoCloud 加速器的后台架构：
-
-<!-- TODO: 2.Docker Hub Mirror 还是 DaoMirror？ -->
 
 * **[玩转 Docker 镜像](http://blog.daocloud.io/how-to-master-docker-image/)**
 * **[DaoCloud 宣布 Docker Hub Mirror 服务永久免费](http://blog.daocloud.io/daocloud-mirror-free/)**
@@ -66,7 +64,7 @@ Mirror 是 Docker 的官方机制，它是 Registry 的一种特殊类型，在�
 * 在公有云环境部署 Mirror Registry，并优化存储和网络访问（后文会详述）。
 * 在客户端，修改 Docker 的配置文件，添加 `--registry-mirror` 参数（Mirror 控制台中有详细的配置步骤）。
 
-#### DaoMirror 云端部署架构
+#### Docker 加速器云端部署架构
 
 下图是 DaoCloud 在搭建 Mirror 服务时，采用的架构：
 

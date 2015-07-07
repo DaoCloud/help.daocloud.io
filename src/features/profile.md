@@ -1,12 +1,12 @@
 ## 用户中心
 
-用户中心提供用户信息管理、帐号管理、第三方服务、计费等服务。
+用户中心提供用户信息管理、账号管理、第三方服务、计费等服务。
 
 * 用户信息管理。
 
 ![](http://blog.daocloud.io/wp-content/uploads/2015/05/profile-1.png)
 
-* 用户邮箱管理。为了方便多帐号用户，您可以将主邮箱与其他邮箱关联，便于管理。
+* 用户邮箱管理。为了方便多账号用户，您可以将主邮箱与其他邮箱关联，便于管理。
 
 ![](http://blog.daocloud.io/wp-content/uploads/2015/05/profile-2.png)
 
@@ -22,6 +22,6 @@
 
 ![](http://blog.daocloud.io/wp-content/uploads/2015/05/profile-5.png)
 
-* 如果您将微信帐号与自己的 DaoCloud 帐号绑定，我们即赠送两个项目、一个容器实例和一个服务实例。
+* 如果您将微信账号与自己的 DaoCloud 账号绑定，我们即赠送两个项目、一个容器实例和一个服务实例。
 
 ![](http://blog.daocloud.io/wp-content/uploads/2015/05/profile-6.png)

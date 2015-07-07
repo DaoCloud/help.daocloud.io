@@ -11,7 +11,7 @@
   + [DaoCloud 视频和演示](intro/demo.md)
   + [DaoCloud 平台词汇表](intro/glossary.md)
 * [产品功能](features/README.md)
-  + [用户中心](features/profile.md)
+  + [用户中心](features/profile.md) <!-- TODO: 支付 -->
   + [代码构建](features/build-flows.md)
     <!-- - [Dockerfile]() -->
   + [持续集成](features/continuous-integration/README.md)

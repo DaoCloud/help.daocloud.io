@@ -16,28 +16,36 @@ DaoCloud CI 是我们自主研发的 CI 执行引擎，目前支持如下语言�
 
 下面是一个配置文件示例：
 
-<!-- TODO：和 YML 格式不一致，是否过期了？ -->
-
 ```
-＃ The build image you want to use; you can select one from DaoCloud support list.
 image: daocloud/ci-golang:1.4
 
-＃ List of services you want to use during your test.
 services:
-  - mysql
-  - mongodb
+    - mongodb
+    - mysql
+    - redis
 
-＃ Environment variables
 env:
-  - GOPATH = /go
-  - MY_ENV = abc
+    - MYENV = "hello"
 
-＃ Scripts you want to run for the test
+install:
+    - echo $MYENV
+    - echo "This is an install segment"
+    - echo "Here, we usually run scripts to setup a base environment"
+
+before_script:
+    - echo $MYENV
+    - echo "This is an before_script segment"
+    - echo "Here, we usually run scripts to prepare our test"
+
 script:
-  - sudo apt-get update
-  - sudo apt-get -y install bzr
-  - go get -t ./...
-  - go test your-code
+    - echo $MYENV
+    - echo "This is an script segment"
+    - echo "Run test cases here"
+    - echo ""
+    - echo "Below shows how to use services"
+    - ping -c 2 mongodb
+    - ping -c 2 mysql
+    - ping -c 2 redis
 ```
 
 #### 2. 推送代码
