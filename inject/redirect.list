@@ -1,0 +1,59 @@
+# old readme.io redirection
+v1.0/docs/_-1/index.html -> /function/host.html
+v1.0/docs/_/index.html -> /tutorial/demo.html
+v1.0/docs/about/index.html -> /tutorial/AboutDaoCloud.html
+v1.0/docs/accelerator/index.html -> /tutorial/DaoCloudMirrorAccelerator.html
+v1.0/docs/benefits/index.html -> /tutorial/benefits.html
+v1.0/docs/code/index.html -> /function/code.html
+v1.0/docs/configure-daocloud-ci/index.html -> /function/configure-daocloud-ci.html
+v1.0/docs/configure/index.html -> /tutorial/DaoCloudMirrorAccelerator.html
+v1.0/docs/daocloud-2/index.html -> /tutorial/DaoCloud-innovation.html
+v1.0/docs/daocloud-yml/index.html -> /function/daocloud-yml.html
+v1.0/docs/deer-resume/index.html -> /practice/deer-resume.html
+v1.0/docs/demo/index.html -> /tutorial/demo.html
+v1.0/docs/deploy/index.html -> /function/deploy.html
+v1.0/docs/earth/index.html -> /practice/earth.html
+v1.0/docs/functions/index.html -> /tutorial/AboutDaoCloud.html
+v1.0/docs/ghost-blog/index.html -> /practice/ghost-blog.html
+v1.0/docs/installation/index.html -> /tutorial/AboutDaoCloud.html
+v1.0/docs/management/index.html -> /tutorial/AboutDaoCloud.html
+v1.0/docs/mongo-express/index.html -> /practice/mongo-express.html
+v1.0/docs/phpmyadmin/index.html -> /practice/phpmyadmin.html
+v1.0/docs/procedure/index.html -> /tutorial/DaoCloudMirrorAccelerator.html
+v1.0/docs/profile/index.html -> /function/profile.html
+v1.0/docs/register-account/index.html -> /practice/register-account.html
+v1.0/docs/repos/index.html -> /function/repos.html
+v1.0/docs/services/index.html -> /function/services.html
+v1.0/docs/vocabulary/index.html -> /tutorial/vocabulary.html
+v1.0/docs/what-is-daomirror/index.html -> /tutorial/DaoCloudMirrorAccelerator.html
+
+# new redirection goes here
+tutorial/index.html -> /intro/index.html
+tutorial/benefits.html -> /intro/benefits.html
+tutorial/DaoCloud-innovation.html -> /intro/innovation.html
+practice/register-account.html -> /intro/registration.html
+tutorial/DaoCloudMirrorAccelerator.html -> /intro/accelerator.html
+tutorial/demo.html -> /intro/demo.html
+tutorial/vocabulary.html -> /intro/glossary.html
+
+function/index.html -> /features/index.html
+function/profile.html -> /features/profile.html
+function/code.html -> /features/build-flows.html
+function/configure-daocloud-ci.html -> /features/continuous-integration/index.html
+function/daocloud-yml.html -> /features/continuous-integration/daocloud-yml.html
+function/repos.html -> /features/packages.html
+function/services.html -> /features/services.html
+function/host.html -> /features/runtimes.html
+function/deploy.html -> /features/deployment.html
+
+practice/index.html -> /practices/index.html
+practice/ghost-blog.html -> /practices/ghost-blog.html
+practice/deer-resume.html -> /practices/deer-resume.html
+practice/earth.html -> /practices/earth.html
+practice/phpmyadmin.html -> /practices/phpmyadmin.html
+practice/mongo-express.html -> /practices/mongo-express.html
+
+tutorial/DockerTutorial.html -> /tutorials/index.html
+
+dev/index.html -> /developers/index.html
+dev/php.html -> /developers/php.html
