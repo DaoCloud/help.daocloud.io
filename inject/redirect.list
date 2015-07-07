@@ -28,3 +28,32 @@ v1.0/docs/vocabulary/index.html -> /tutorial/vocabulary.html
 v1.0/docs/what-is-daomirror/index.html -> /tutorial/DaoCloudMirrorAccelerator.html
 
 # new redirection goes here
+tutorial/index.html -> /intro/index.html
+tutorial/benefits.html -> /intro/benefits.html
+tutorial/DaoCloud-innovation.html -> /intro/innovation.html
+practice/register-account.html -> /intro/registration.html
+tutorial/DaoCloudMirrorAccelerator.html -> /intro/accelerator.html
+tutorial/demo.html -> /intro/demo.html
+tutorial/vocabulary.html -> /intro/glossary.html
+
+function/index.html -> /features/index.html
+function/profile.html -> /features/profile.html
+function/code.html -> /features/build-flows.html
+function/configure-daocloud-ci.html -> /features/continuous-integration/index.html
+function/daocloud-yml.html -> /features/continuous-integration/daocloud-yml.html
+function/repos.html -> /features/packages.html
+function/services.html -> /features/services.html
+function/host.html -> /features/runtimes.html
+function/deploy.html -> /features/deployment.html
+
+practice/index.html -> /practices/index.html
+practice/ghost-blog.html -> /practices/ghost-blog.html
+practice/deer-resume.html -> /practices/deer-resume.html
+practice/earth.html -> /practices/earth.html
+practice/phpmyadmin.html -> /practices/phpmyadmin.html
+practice/mongo-express.html -> /practices/mongo-express.html
+
+tutorial/DockerTutorial.html -> /tutorials/index.html
+
+dev/index.html -> /developers/index.html
+dev/php.html -> /developers/php.html

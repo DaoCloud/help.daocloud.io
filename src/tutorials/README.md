@@ -40,7 +40,7 @@ user$ curl -sSL https://get.daocloud.io/docker | sh
 
 #### 案例 1 启动一个容器
 
-```shell 
+```shell
 root# docker run ubuntu:14.04 /bin/echo 'Hello world'
 Hello world
 ```

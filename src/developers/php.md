@@ -90,7 +90,7 @@ CMD ["./start.sh"]
  - 部署最近版本，选择目标集成的MySQL数据库
  - 启动应用后，在数据库运行SQL语句，方便部署的应用查询测试用的数据
  ```
- 	CREATE TABLE `test` (
+	CREATE TABLE `test` (
 		`id` int NOT NULL AUTO_INCREMENT,
 		`data` varchar(255) NOT NULL,
 		PRIMARY KEY (`id`)
@@ -138,8 +138,8 @@ EXPOSE 80
  2. 添加您的php代码到src文件夹中
  3. 修改php.ini到您需要的配置
  4. 在本地调试您的Image可以大幅缩减在DaoCloud中部署调试的时间。
- 	建议调试脚本：
- 	```
+	建议调试脚本：
+	```
 	docker stop daocloudphpc
 	docker rm daocloudphpc
 	docker rmi daocloudphp
@@ -147,8 +147,8 @@ EXPOSE 80
 	docker build -t daocloudphp /root/DaoCloudPHP
 	docker run -it -d --name daocloudphpc -e "MYSQL_PORT_3306_TCP_ADDR=10.0.2.15" -e "MYSQL_USERNAME=root" -e "MYSQL_PASSWORD=1" -e "MYSQL_INSTANCE_NAME=test" -p 11210:80 daocloudphp
 	docker exec -it daocloudphpc /bin/bash
- 	```
- 	容器与镜像的名字可以随您的意愿更换。运行脚本可以删除容器与镜像并重新构建运行您的程序方便调试。
+	```
+	容器与镜像的名字可以随您的意愿更换。运行脚本可以删除容器与镜像并重新构建运行您的程序方便调试。
  5. 部署到DaoCloud
 
 ### 数据库连接参数说明
