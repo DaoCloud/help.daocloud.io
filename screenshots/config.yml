@@ -8,6 +8,7 @@ dimension:
 urls:
   signin: account.daocloud.co/signin
   dashboard: 'dashboard.daocloud.co'
+  buildflow: 'dashboard.daocloud.co/build-flows'
 user:
   username: CaptainDao
   password: dangerous

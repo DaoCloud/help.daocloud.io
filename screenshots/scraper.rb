@@ -1,6 +1,6 @@
-require "yaml"
-# require "selenium-webdriver" installed: gem install selenium-webdriver
-require "selenium-webdriver"
+require 'yaml'
+# require 'selenium-webdriver' installed: gem install selenium-webdriver
+require 'selenium-webdriver'
 
 # monkey patch class Hash
 class Hash
@@ -17,7 +17,7 @@ end
 
 # define helpers
 def ensure!
-  raise "Assertion failed!" unless yield
+  raise 'Assertion failed!' unless yield
 end
 
 def setup_driver config
@@ -79,6 +79,13 @@ def go_buildflow
   @wait.until { old_url != @driver.current_url }
 end
 
+def list_buildflow
+  ensure! { url_match @config.urls.buildflow }
+
+  projects = @driver.find_elements :class, 'project-name-wrapper'
+  projects.collect { |p| p.find_element(:tag_name, 'a')['href'].split('/').last }
+end
+
 ## take a screenshot
 def screenshot_to name
   FileUtils.mkdir_p @config.screenshot.dir
@@ -110,6 +117,7 @@ def scrapper_start!
   puts "Navigate to buildflow"
   go_buildflow
   screenshot_to 'buildflow'
+  puts "Current projects: #{list_buildflow.join ', '}"
   puts "Dashboard screenshot saved!"
 end
 
