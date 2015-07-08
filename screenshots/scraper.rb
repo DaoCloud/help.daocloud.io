@@ -58,7 +58,7 @@ end
 # define actions
 ## sign in
 def sign_in username, password
-  ensure! { url_match @config.urls.signin }
+  go 'signin' unless url_match @config.urls.signin
 
   username_field = @driver.find_element :id, 'username_id'
   username_field.send_keys username
@@ -66,21 +66,20 @@ def sign_in username, password
   password_field.send_keys password
   password_field.submit
 
-  @wait.until { url_start_with @config.urls.dashboard }
+  @wait.until { url_match @config.urls.dashboard }
 end
 
-def go_buildflow
-  link_buildflow = @driver.find_element :id, 'buildflow'
-  ensure! { link_buildflow.displayed? }
+def go to
+  url = @config.urls[to]
 
-  old_url = @driver.current_url
-  link_buildflow.click
-
-  @wait.until { old_url != @driver.current_url }
+  navigate_to url
+  @wait.until { url_match url }
+  Selenium::WebDriver::Wait.new(timeout: 1).until rescue nil
+  @wait.until { !(@driver.find_element(:class, 'loader-bar') rescue nil) }
 end
 
 def list_buildflow
-  ensure! { url_match @config.urls.buildflow }
+  go 'buildflow' unless url_match @config.urls.buildflow
 
   projects = @driver.find_elements :class, 'project-name-wrapper'
   projects.collect { |p| p.find_element(:tag_name, 'a')['href'].split('/').last }
@@ -89,10 +88,6 @@ end
 ## take a screenshot
 def screenshot_to name
   FileUtils.mkdir_p @config.screenshot.dir
-
-  # wait page loaded
-  sleep = Selenium::WebDriver::Wait.new timeout: @config.screenshot.wait
-  sleep.until { false } rescue nil
 
   name = "#{name}.png" unless name.end_with? '.png'
   @driver.save_screenshot "#{@config.screenshot.dir}/#{name}"
@@ -109,13 +104,15 @@ def scrapper_start!
   puts "Resized to: (#{@window.size.width}, #{@window.size.height})"
 
   puts "Attampt to sign in for #{@config.user.username}"
-  navigate_to @config.urls.signin
   sign_in @config.user.username, @config.user.password
+
+  puts "Navigate to dashboard"
+  go 'dashboard'
   screenshot_to 'dashboard'
   puts "Dashboard screenshot saved!"
 
   puts "Navigate to buildflow"
-  go_buildflow
+  go 'buildflow'
   screenshot_to 'buildflow'
   puts "Current projects: #{list_buildflow.join ', '}"
   puts "Dashboard screenshot saved!"
