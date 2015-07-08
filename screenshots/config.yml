@@ -11,4 +11,6 @@ urls:
 user:
   username: CaptainDao
   password: dangerous
-screenshot_dir: images
+screenshot:
+  dir: images
+  wait: 3

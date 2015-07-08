@@ -31,7 +31,6 @@ def setup_driver config
   @driver = Selenium::WebDriver.for @config.browser.downcase.to_sym, profile: profile
 
   # configure window size
-  puts @config
   @window = @driver.manage.window
   @window.move_to @config.position.x, @config.position.y
   @window.resize_to @config.dimension.width, @config.dimension.height
@@ -40,7 +39,7 @@ def setup_driver config
   @uri_prefix = 'http'
 
   # setup default wait
-  @wait = Selenium::WebDriver::Wait.new(:timeout => 30)
+  @wait = Selenium::WebDriver::Wait.new timeout: 30
 end
 
 def navigate_to url
@@ -70,12 +69,26 @@ def sign_in username, password
   @wait.until { url_start_with @config.urls.dashboard }
 end
 
+def go_buildflow
+  link_buildflow = @driver.find_element :id, 'buildflow'
+  ensure! { link_buildflow.displayed? }
+
+  old_url = @driver.current_url
+  link_buildflow.click
+
+  @wait.until { old_url != @driver.current_url }
+end
+
 ## take a screenshot
 def screenshot_to name
-  FileUtils.mkdir_p @config.screenshot_dir
+  FileUtils.mkdir_p @config.screenshot.dir
+
+  # wait page loaded
+  sleep = Selenium::WebDriver::Wait.new timeout: @config.screenshot.wait
+  sleep.until { false } rescue nil
 
   name = "#{name}.png" unless name.end_with? '.png'
-  @driver.save_screenshot "#{@config.screenshot_dir}/#{name}"
+  @driver.save_screenshot "#{@config.screenshot.dir}/#{name}"
 end
 
 ##
@@ -88,9 +101,16 @@ def scrapper_start!
   puts "Moved to: (#{@window.position.x}, #{@window.position.y})"
   puts "Resized to: (#{@window.size.width}, #{@window.size.height})"
 
+  puts "Attampt to sign in for #{@config.user.username}"
   navigate_to @config.urls.signin
   sign_in @config.user.username, @config.user.password
   screenshot_to 'dashboard'
+  puts "Dashboard screenshot saved!"
+
+  puts "Navigate to buildflow"
+  go_buildflow
+  screenshot_to 'buildflow'
+  puts "Dashboard screenshot saved!"
 end
 
 scrapper_start!
