@@ -1,0 +1,14 @@
+browser: Firefox
+position:
+  x: 0
+  y: 0
+dimension:
+  width: 1366
+  height: 768
+urls:
+  signin: account.daocloud.co/signin
+  dashboard: 'dashboard.daocloud.co'
+user:
+  username: CaptainDao
+  password: dangerous
+screenshot_dir: images

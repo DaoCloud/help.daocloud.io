@@ -2,6 +2,9 @@
 _book/
 dist/
 
+# generated screenshots
+/screenshots/images
+
 # the error file created by npm
 npm-debug.log
 
