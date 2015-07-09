@@ -14,7 +14,7 @@
 
 ![](http://blog.daocloud.io/wp-content/uploads/2015/05/app-earth-8.png)
 
-打开应用的 URL，您就可以可以看到地球的实时气候影像了！
+打开应用的 URL，您就可以看到地球的实时气候影像了！
 
 点击左下角的 earth 单词，还可以对显示的内容和风格做调整。
 

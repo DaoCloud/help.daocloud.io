@@ -6,6 +6,6 @@
 
 * DeerResume
 * earth
-* Ghost Blog
+* Ghost 博客
 * Mongo Express
 * phpMyAdmin

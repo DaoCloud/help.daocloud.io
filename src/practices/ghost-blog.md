@@ -17,12 +17,8 @@
 
 ![](http://blog.daocloud.io/wp-content/uploads/2015/05/app-ghost-2.png)
 
-给容器命名，此处命名为**ghost-blogger**，选择**服务&环境**绑定MySQL服务，切记此处需要使用mysql作为连接字符串的别名，然后点击**立即部署**。
+部署时在**服务&环境**绑定 MySQL 服务，切记此处需要使用 `mysql` 作为连接字符串的别名，然后点击**立即部署**。
 
-部署成功。
-
-![](http://blog.daocloud.io/wp-content/uploads/2015/05/app-ghost-4.png)
-
-点击应用URL，现在您可以使用酷炫的Ghost博客系统开始您的博客之旅了！
+部署成功后打开应用的 URL，您就可以使用酷炫的 Ghost 博客系统开始您的博客之旅了！
 
 ![](http://blog.daocloud.io/wp-content/uploads/2015/05/app-ghost.png)
