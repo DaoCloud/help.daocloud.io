@@ -3,7 +3,8 @@
 <!-- TODO: 拆分三十分钟学 Docker -->
 
 * [关于 DaoCloud](README.md)
-* [DaoCloud 平台快速上手](intro/README.md)
+* [DaoCloud 平台简介](intro/README.md)
+  <!-- 合并优势和创新 -->
   + [DaoCloud 平台的优势](intro/benefits.md)
   + [DaoCloud 平台的创新](intro/innovation.md)
   + [DaoCloud 账号的注册](intro/registration.md)
@@ -28,11 +29,11 @@
 * [快速实践](practices/README.md)
     <!-- - [公有云]() -->
     <!-- - [自有主机]() -->
-  + [快速创建应用：Ghost](practices/ghost-blog.md)
-  + [快速创建应用：DeerCV](practices/deer-resume.md)
-  + [快速创建应用：Earth](practices/earth.md)
+  + [快速创建应用：DeerResume](practices/deer-resume.md)
+  + [快速创建应用：earth](practices/earth.md)
+  + [快速创建应用：Ghost 博客](practices/ghost-blog.md)
+  + [快速创建应用：Mongo Express](practices/mongo-express.md)
   + [快速创建应用：phpMyAdmin](practices/phpmyadmin.md)
-  + [快速创建应用：mongo-express](practices/mongo-express.md)
 * [三十分钟学 Docker](tutorials/README.md)
 * [开发者指南](developers/README.md)
   + [在 DaoCloud 上快速发布PHP应用](developers/php.md)
