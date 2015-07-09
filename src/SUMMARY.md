@@ -3,7 +3,8 @@
 <!-- TODO: 拆分三十分钟学 Docker -->
 
 * [关于 DaoCloud](README.md)
-* [DaoCloud 平台快速上手](intro/README.md)
+* [DaoCloud 平台简介](intro/README.md)
+  <!-- 合并优势和创新 -->
   + [DaoCloud 平台的优势](intro/benefits.md)
   + [DaoCloud 平台的创新](intro/innovation.md)
   + [DaoCloud 账号的注册](intro/registration.md)
