@@ -21,6 +21,8 @@ install:
     - echo $MYENV
     - echo "This is an install segment"
     - echo "Here, we usually run scripts to setup a base environment"
+    - echo "For customized base image, you need to install git here unless you have git installed in your base image"
+    - echo "e.g., apt-get install -y git-core"
 
 before_script:
     - echo $MYENV
@@ -32,7 +34,7 @@ script:
     - echo "This is an script segment"
     - echo "Run test cases here"
     - echo ""
-    - echo "Below shows how to use services"
+    - echo "Below shows how to use services, mongodb/mysql/redis are the hostnames of services"
     - ping -c 2 mongodb
     - ping -c 2 mysql
     - ping -c 2 redis
@@ -50,12 +52,15 @@ script:
 
 DaoCloud 为您准备了多种编程语言的测试环境（这些测试环境是基于官方的 `ubuntu:14.04` 镜像），目前支持的编程语言包括：
 
-* Golang (1.4)
-* Python (2.7)
-* Ruby (1.9.3)
-* Java (openjdk7)
+* Golang (1.0, 1.1, 1.2, 1.3, 1.4)
+* Python (2.6, 2.7, 3.1, 3.2, 3.3, 3.4)
+* Ruby (1.8.7, 1.9.3, 2.0.0, 2.1.2, 2.1.4, 2.1.6, 2.2.0, 2.2.2)
+* Java (openjdk6, openjdk7, oraclejdk6, oraclejdk7, oraclejdk8, oraclejdk9)
+* Javascript - NodeJS (0.6, 0.8, 0.10, 0.12)
+* PHP (5.5, 5.6)
+* C - gcc (4.4, 4.6, 4.7, 4.8, 4.9, 5)
 
-为了方便您准备测试环境，我们还提供了下列测试服务：
+为了方便您准备测试环境，我们还提供了数据储存服务：
 
 * MySQL (5.5)
 * Redis (2.8)
@@ -76,14 +81,47 @@ DaoCloud 为您准备了多种编程语言的测试环境（这些测试环境�
 image: daocloud/ci-golang:1.4
 ```
 
-您可以从下面的列表（DaoCloud 准备好的镜像）中选择您希望的运行环境（该列表正在不断完善中）
+您可以从下面的列表（DaoCloud 准备好的镜像）中选择您希望的运行环境（该列表正在不断完善中）：
 
-* daocloud/ci-ruby:1.9.3
-* daocloud/ci-java:openjdk7
+* daocloud/ci-python:2.6
 * daocloud/ci-python:2.7
+* daocloud/ci-python:3.1
+* daocloud/ci-python:3.2
+* daocloud/ci-python:3.3
+* daocloud/ci-python:3.4
+* daocloud/ci-golang:1.0
+* daocloud/ci-golang:1.1
+* daocloud/ci-golang:1.2
+* daocloud/ci-golang:1.3
 * daocloud/ci-golang:1.4
+* daocloud/ci-node:0.6
+* daocloud/ci-node:0.8
+* daocloud/ci-node:0.10
+* daocloud/ci-node:0.12
+* daocloud/ci-php:5.5
+* daocloud/ci-php:5.6
+* daocloud/ci-ruby:1.8.7
+* daocloud/ci-ruby:1.9.3
+* daocloud/ci-ruby:2.0.0
+* daocloud/ci-ruby:2.1.2
+* daocloud/ci-ruby:2.1.4
+* daocloud/ci-ruby:2.1.6
+* daocloud/ci-ruby:2.2.0
+* daocloud/ci-ruby:2.2.2
+* daocloud/ci-java:openjdk6
+* daocloud/ci-java:openjdk7
+* daocloud/ci-java:oraclejdk6
+* daocloud/ci-java:oraclejdk7
+* daocloud/ci-java:oraclejdk8
+* daocloud/ci-java:oraclejdk9
+* daocloud/ci-gcc:4.4
+* daocloud/ci-gcc:4.6
+* daocloud/ci-gcc:4.7
+* daocloud/ci-gcc:4.8
+* daocloud/ci-gcc:4.9
+* daocloud/ci-gcc:5
 
-当然你可以使用自己托管在 Docker Hub 上的镜像，比如
+当然您可以使用自己托管在 Docker Hub 上的镜像，比如
 
 * userxxx/python:3.0
 * useryyy/golang:1.1
@@ -114,6 +152,8 @@ Port: 3306
 UserName: root
 
 Password: 不设密码
+
+Default Instance: test
 
 环境变量：
 

@@ -33,7 +33,6 @@
 ### 用户使用 DaoCloud 的准备工作
 
 <!-- TODO: 2: 我到哪儿去找这些知识? (Dockerfile) -->
-<!-- FIXME: 统一用“您” -->
 
 * 使用 Github、BitBucket、Coding 和 GitCafe 做代码托管，我们将支持 OSChina 等优秀的国内外代码托管服务。
 * 在项目根目录，预先写好一个 Dockerfile。建议您理解并掌握使用 Docker 镜像方式打包软件项目的一些必要知识。

@@ -4,8 +4,6 @@
 
 ![](http://blog.daocloud.io/wp-content/uploads/2015/06/repos.png)
 
-<!-- FIXME: 「我的应用」？？？？ 在那儿？？？？？ -->
-
 「我的镜像」是用户在「代码构建」中构建的 Docker 镜像的集合。「我的镜像」以项目为单位。点击图标，可以进入详细信息的查看页面。
 
 ![](http://blog.daocloud.io/wp-content/uploads/2015/06/repos-2.png)

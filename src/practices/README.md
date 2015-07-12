@@ -4,8 +4,8 @@
 
 包括：
 
-* DeerResume
-* earth
-* Ghost 博客
-* Mongo Express
-* phpMyAdmin
+* [DeerResume](deer-resume.md)
+* [earth](earth.md)
+* [Ghost 博客](ghost-blog.md)
+* [Mongo Express](mongo-express.md)
+* [phpMyAdmin](phpmyadmin.md)

@@ -1,16 +1,16 @@
 # old readme.io redirection
 v1.0/docs/_-1/index.html -> /features/runtimes.html
-v1.0/docs/_/index.html -> /intro/demo.html
+v1.0/docs/_/index.html -> /intro/reasons.html
 v1.0/docs/about/index.html -> /intro/index.html
 v1.0/docs/accelerator/index.html -> /intro/accelerator.html
-v1.0/docs/benefits/index.html -> /intro/benefits.html
+v1.0/docs/benefits/index.html -> /intro/reasons.html
 v1.0/docs/code/index.html -> /features/build-flows.html
 v1.0/docs/configure-daocloud-ci/index.html -> /features/continuous-integration/index.html
 v1.0/docs/configure/index.html -> /intro/accelerator.html
-v1.0/docs/daocloud-2/index.html -> /intro/innovation.html
+v1.0/docs/daocloud-2/index.html -> /intro/reasons.html
 v1.0/docs/daocloud-yml/index.html -> /features/continuous-integration/daocloud-yml.html
 v1.0/docs/deer-resume/index.html -> /practices/deer-resume.html
-v1.0/docs/demo/index.html -> /intro/demo.html
+v1.0/docs/demo/index.html -> /intro/reasons.html
 v1.0/docs/deploy/index.html -> /features/deployment.html
 v1.0/docs/earth/index.html -> /practices/earth.html
 v1.0/docs/functions/index.html -> /intro/index.html
@@ -29,11 +29,11 @@ v1.0/docs/what-is-daomirror/index.html -> /intro/accelerator.html
 
 # new redirection goes here
 tutorial/index.html -> /intro/index.html
-tutorial/benefits.html -> /intro/benefits.html
-tutorial/DaoCloud-innovation.html -> /intro/innovation.html
+tutorial/benefits.html -> /intro/reasons.html
+tutorial/DaoCloud-innovation.html -> /intro/reasons.html
 practice/register-account.html -> /intro/registration.html
 tutorial/DaoCloudMirrorAccelerator.html -> /intro/accelerator.html
-tutorial/demo.html -> /intro/demo.html
+tutorial/demo.html -> /intro/reasons.html
 tutorial/vocabulary.html -> /intro/glossary.html
 
 function/index.html -> /features/index.html
@@ -57,3 +57,8 @@ tutorial/DockerTutorial.html -> /tutorials/index.html
 
 dev/index.html -> /developers/index.html
 dev/php.html -> /developers/php.html
+
+# merge benefits and innovation
+intro/benefits.html -> /intro/reasons.html
+intro/innovation.html -> /intro/reasons.html
+intro/demo.html -> /intro/reasons.html

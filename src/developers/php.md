@@ -129,7 +129,7 @@ EXPOSE 80
 注意事项：
 
  - 本方法基于Docker官方的 php:5.6-apache 直接就有PHP环境
- - 可以使用插件docker-php-ext-install安装你的依赖模块
+ - 可以使用插件docker-php-ext-install安装您的依赖模块
  - 不要忘记EXPOSE 80否则无法在DaoCloud中使用Web端口
 
 ### 建议工作流程：

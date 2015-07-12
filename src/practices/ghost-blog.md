@@ -2,7 +2,7 @@
 
 ## Ghost 博客是什么？
 
-还在用 WordPress 做你的博客站点？你 OUT 了！速度切换到 Ghost，用 Markdown 写出最有逼格的技术博客吧。这个出自于 WordPress 前 UX 部门开发者/设计师 John O’Nolan 之手的博客系统，自 2012 年诞生之日起就被冠于类似「WordPress 杀手」、「博客的新纪元」、「年度最令人兴奋的博客体系」之类的头衔。
+还在用 WordPress 做您的博客站点？您 OUT 了！速度切换到 Ghost，用 Markdown 写出最有逼格的技术博客吧。这个出自于 WordPress 前 UX 部门开发者/设计师 John O’Nolan 之手的博客系统，自 2012 年诞生之日起就被冠于类似「WordPress 杀手」、「博客的新纪元」、「年度最令人兴奋的博客体系」之类的头衔。
 
 关于 WordPress 和 Ghost 的比较大家可以参见 **[WordPress VS Ghost](http://www.elegantthemes.com/blog/resources/wordpress-vs-ghost)**（英文版）
 

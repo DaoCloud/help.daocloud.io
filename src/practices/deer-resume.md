@@ -2,7 +2,7 @@
 
 ## DeerResume 是什么？
 
-**DeerResume** 来自于 GitHub 项目 **[geekcompany/DeerResume](https://github.com/geekcompany/DeerResume)**，你可以很方便的部署你的专属简历网站，并用 Markdown 写出最具程序员风格的简历。
+**DeerResume** 来自于 GitHub 项目 **[geekcompany/DeerResume](https://github.com/geekcompany/DeerResume)**，您可以很方便的部署您的专属简历网站，并用 Markdown 写出最具程序员风格的简历。
 
 作为最好用的 Markdown 在线简历工具，它具有以下优点：
 
