@@ -4,9 +4,7 @@
 
 包括：
 
-* DaoCloud 平台的优势
-* DaoCloud 平台的创新
-* DaoCloud 账号的注册
-* DaoCloud 镜像加速器
-* DaoCloud 视频和演示
-* DaoCloud 平台词汇表
+* [为什么要使用 DaoCloud？](reasons.md)
+* [DaoCloud 账号的注册](registration.md)
+* [DaoCloud 镜像加速器](accelerator.md)
+* [DaoCloud 平台词汇表](glossary.md)

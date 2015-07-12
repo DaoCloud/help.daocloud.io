@@ -4,7 +4,7 @@
 
 包括：
 
-* PHP
+* [PHP](php.md)
 
 提示：我们将在未来逐步添加 Go、Java、Python、Ruby 等语言。
 
