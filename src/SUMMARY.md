@@ -4,12 +4,9 @@
 
 * [关于 DaoCloud](README.md)
 * [DaoCloud 平台简介](intro/README.md)
-  <!-- 合并优势和创新 -->
-  + [DaoCloud 平台的优势](intro/benefits.md)
-  + [DaoCloud 平台的创新](intro/innovation.md)
+  + [为什么要使用 DaoCloud？](intro/reasons.md)
   + [DaoCloud 账号的注册](intro/registration.md)
   + [DaoCloud 镜像加速器](intro/accelerator.md)
-  + [DaoCloud 视频和演示](intro/demo.md)
   + [DaoCloud 平台词汇表](intro/glossary.md)
 * [产品功能](features/README.md)
   + [用户中心](features/profile.md) <!-- TODO: 支付 -->
@@ -36,4 +33,4 @@
   + [快速创建应用：phpMyAdmin](practices/phpmyadmin.md)
 * [三十分钟学 Docker](tutorials/README.md)
 * [开发者指南](developers/README.md)
-  + [在 DaoCloud 上快速发布PHP应用](developers/php.md)
+  + [在 DaoCloud 上快速发布 PHP 应用](developers/php.md)

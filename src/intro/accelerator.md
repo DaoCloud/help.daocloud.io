@@ -28,7 +28,7 @@ Docker 镜像的分层文件系统是非常有趣的创新，作为 Docker 用�
 
 ### 加速方法
 
-请先确定你的 Docker 版本高于 1.3.2。
+请先确定您的 Docker 版本高于 1.3.2。
 
 然后参考 **[控制台中加速器](https://dashboard.daocloud.io/mirror)** 的操作手册。
 

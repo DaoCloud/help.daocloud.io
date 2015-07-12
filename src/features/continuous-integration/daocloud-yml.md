@@ -83,7 +83,7 @@ image: daocloud/ci-golang:1.4
 * daocloud/ci-python:2.7
 * daocloud/ci-golang:1.4
 
-当然你可以使用自己托管在 Docker Hub 上的镜像，比如
+当然您可以使用自己托管在 Docker Hub 上的镜像，比如
 
 * userxxx/python:3.0
 * useryyy/golang:1.1

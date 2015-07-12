@@ -45,7 +45,7 @@ root# docker run ubuntu:14.04 /bin/echo 'Hello world'
 Hello world
 ```
 
-1. 注意操作 Docker 是需要权限的，这里使用 `root` 用户操作，当然你也可以把 `docker` 加入自己的用户。
+1. 注意操作 Docker 是需要权限的，这里使用 `root` 用户操作，当然您也可以把 `docker` 加入自己的用户。
 2. `run` 作为 Docker 的子命令来控制新建容器并且运行。Docker 命令虽然比较多，但是命令是分级来执行的，多参照 `help` 就会习惯。
 3. `ubuntu:14.04` 代表镜像的名字和版本号，托管在 Docker Hub 上，如果本地没有抓取过那么执行命令的时候会自动从 Docker Hub 抓取。
 4. `/bin/echo` 为在容器内执行的程序（应用）。
@@ -168,7 +168,7 @@ deaaa8e60c9f  ubuntu:14.04  [...]    14 min ago  Up 1 sec           distracted_d
 * Docker 内的系统相当于货物的包装。
 * 目标程序则相当于货物。
 
-当你看完上面的描述之后可以了解到每一种角色不同的作用以及所处的位置有所了解。
+当您看完上面的描述之后可以了解到每一种角色不同的作用以及所处的位置有所了解。
 
 当然理论上的 Docker 只是一个轮船图纸，必须得有一个守护进程才能运行。
 
@@ -176,7 +176,7 @@ deaaa8e60c9f  ubuntu:14.04  [...]    14 min ago  Up 1 sec           distracted_d
 
 <!-- TODO: 单独列出来 -->
 
-### 通过 Docker 运行你的 Web 应用，Step By Step
+### 通过 Docker 运行您的 Web 应用，Step By Step
 
 代码文件请参考： **[DaoCloud 搭建静态博客](https://github.com/lijianying10/DaoCloudStaticBlog)** 以及 **[整个研究过程参考](http://open.daocloud.io/build-and-deploy-the-thinnest-docker-image/)**。
 
