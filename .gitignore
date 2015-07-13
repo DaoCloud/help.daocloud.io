@@ -10,3 +10,6 @@ qrsync.json
 
 # vim swap files
 *.swp
+
+# the node modules
+node_modules/
