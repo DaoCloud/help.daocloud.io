@@ -76,23 +76,29 @@
 
 ### 查看项目清单
 
-![代码构建：项目列表](/img/screenshots/features/build-flows/build-flows-index-with-project.png)
-
 在项目清单列表中，您可以看到您的项目的构建状态，同时也会显示出代码源、编程语言、CI 服务、构建时间和镜像名称。
+
+![代码构建：项目列表](/img/screenshots/features/build-flows/build-flows-index-with-project.png)
 
 在项目清单中点击项目名称，您可以进入项目的「镜像构建」、「持续集成」和「设置」选项卡。
 
-![「镜像构建」选项卡](/img/screenshots/features/build-flows/build-history.png)
+---
 
 镜像构建选项卡可以查看 Docker 镜像的构建历史和在构建过程中产生的实时日志，了解镜像构建的历史和出错时的原因。
 
-![「持续集成」选项卡](/img/screenshots/features/build-flows/build-ci.png)
+![「镜像构建」选项卡](/img/screenshots/features/build-flows/build-history.png)
+
+---
 
 持续集成选项卡提供了使用和触发 DaoCloud 持续集成的详细信息。
 
-![「设置」选项卡](/img/screenshots/features/build-flows/build-settings.png)
+![「持续集成」选项卡](/img/screenshots/features/build-flows/build-ci.png)
+
+---
 
 设置界面中，可以重新配置持续集成服务、构建位置和镜像发布到的目标位置，也可以删除该项目。
+
+![「设置」选项卡](/img/screenshots/features/build-flows/build-settings.png)
 
 ### 使用 DaoCloud 构建镜像的优势
 
@@ -114,9 +120,10 @@
 
 ### 下一步
 
-至此，您已经掌握了在 DaoCloud 上创建、配置项目和完成第一次镜像构建。
+至此，您已经掌握了如何在 DaoCloud 上创建、配置项目并完成第一次镜像构建。
 
 下面您可以：
 
-* 了解如何用 DaoCloud 进行[持续集成](continuous-integration/README.md)。
-* 了解如何[部署](deployment.md)刚刚构建好的应用镜像。
+* 了解如何用 DaoCloud 进行持续集成：参考[持续集成](continuous-integration/README.md)。
+* 了解如何用为应用准备一个数据库服务：参考[服务集成](services.md)。
+* 了解如何部署一个刚刚构建好的应用镜像：参考[应用部署](deployment.md)。
