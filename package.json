@@ -1,0 +1,29 @@
+{
+  "name": "daocloud-help",
+  "version": "1.8.0",
+  "description": "DaoCloud Help",
+  "main": "imagemin.js",
+  "dependencies": {
+    "imagemin": "3.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DaoCloud/help.daocloud.io.git"
+  },
+  "keywords": [
+    "DaoCloud",
+    "docker",
+    "help",
+    "GitBook"
+  ],
+  "author": "DaoCloud",
+  "license": "All Right Reserved",
+  "bugs": {
+    "url": "https://github.com/DaoCloud/help.daocloud.io/issues"
+  },
+  "homepage": "https://github.com/DaoCloud/help.daocloud.io"
+}
