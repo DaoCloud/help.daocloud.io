@@ -13,3 +13,7 @@ qrsync.json
 
 # the node modules
 node_modules/
+
+# oh, stupid os x!
+._*
+.DS_Store

@@ -20,7 +20,7 @@ v1.0/docs/management/index.html -> /intro/index.html
 v1.0/docs/mongo-express/index.html -> /practices/mongo-express.html
 v1.0/docs/phpmyadmin/index.html -> /practices/phpmyadmin.html
 v1.0/docs/procedure/index.html -> /intro/accelerator.html
-v1.0/docs/profile/index.html -> /features/settings/profile.html
+v1.0/docs/profile/index.html -> /features/profiles/index.html
 v1.0/docs/register-account/index.html -> /intro/registration.html
 v1.0/docs/repos/index.html -> /features/packages.html
 v1.0/docs/services/index.html -> /features/services.html
@@ -37,7 +37,7 @@ tutorial/demo.html -> /intro/reasons.html
 tutorial/vocabulary.html -> /intro/glossary.html
 
 function/index.html -> /features/index.html
-function/profile.html -> /features/settings/profile.html
+function/profile.html -> /features/profiles/index.html
 function/code.html -> /features/build-flows.html
 function/configure-daocloud-ci.html -> /features/continuous-integration/index.html
 function/daocloud-yml.html -> /features/continuous-integration/daocloud-yml.html
@@ -63,5 +63,5 @@ intro/benefits.html -> /intro/reasons.html
 intro/innovation.html -> /intro/reasons.html
 intro/demo.html -> /intro/reasons.html
 
-# split profiles into personal profile and organization profile of settings
-features/profile.html -> /features/settings/profile.html
+# split profiles into multiple parts
+features/profile.html -> /features/profiles/index.html
