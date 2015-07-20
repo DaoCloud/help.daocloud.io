@@ -1,5 +1,5 @@
 # old readme.io redirection
-v1.0/docs/_-1/index.html -> /features/runtimes.html
+v1.0/docs/_-1/index.html -> /features/runtimes/index.html
 v1.0/docs/_/index.html -> /intro/reasons.html
 v1.0/docs/about/index.html -> /intro/index.html
 v1.0/docs/accelerator/index.html -> /intro/accelerator.html
@@ -20,7 +20,7 @@ v1.0/docs/management/index.html -> /intro/index.html
 v1.0/docs/mongo-express/index.html -> /practices/mongo-express.html
 v1.0/docs/phpmyadmin/index.html -> /practices/phpmyadmin.html
 v1.0/docs/procedure/index.html -> /intro/accelerator.html
-v1.0/docs/profile/index.html -> /features/profile.html
+v1.0/docs/profile/index.html -> /features/profiles/index.html
 v1.0/docs/register-account/index.html -> /intro/registration.html
 v1.0/docs/repos/index.html -> /features/packages.html
 v1.0/docs/services/index.html -> /features/services.html
@@ -37,13 +37,13 @@ tutorial/demo.html -> /intro/reasons.html
 tutorial/vocabulary.html -> /intro/glossary.html
 
 function/index.html -> /features/index.html
-function/profile.html -> /features/profile.html
+function/profile.html -> /features/profiles/index.html
 function/code.html -> /features/build-flows.html
 function/configure-daocloud-ci.html -> /features/continuous-integration/index.html
 function/daocloud-yml.html -> /features/continuous-integration/daocloud-yml.html
 function/repos.html -> /features/packages.html
 function/services.html -> /features/services.html
-function/host.html -> /features/runtimes.html
+function/host.html -> /features/runtimes/index.html
 function/deploy.html -> /features/deployment.html
 
 practice/index.html -> /practices/index.html
@@ -62,3 +62,9 @@ dev/php.html -> /developers/php.html
 intro/benefits.html -> /intro/reasons.html
 intro/innovation.html -> /intro/reasons.html
 intro/demo.html -> /intro/reasons.html
+
+# split profiles into multiple parts
+features/profile.html -> /features/profiles/index.html
+
+# add sections to runtimes: new and management
+features/runtimes.html -> /features/runtimes/index.html
