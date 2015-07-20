@@ -1,5 +1,5 @@
 # old readme.io redirection
-v1.0/docs/_-1/index.html -> /features/runtimes.html
+v1.0/docs/_-1/index.html -> /features/runtimes/index.html
 v1.0/docs/_/index.html -> /intro/reasons.html
 v1.0/docs/about/index.html -> /intro/index.html
 v1.0/docs/accelerator/index.html -> /intro/accelerator.html
@@ -43,7 +43,7 @@ function/configure-daocloud-ci.html -> /features/continuous-integration/index.ht
 function/daocloud-yml.html -> /features/continuous-integration/daocloud-yml.html
 function/repos.html -> /features/packages.html
 function/services.html -> /features/services.html
-function/host.html -> /features/runtimes.html
+function/host.html -> /features/runtimes/index.html
 function/deploy.html -> /features/deployment.html
 
 practice/index.html -> /practices/index.html
@@ -65,3 +65,6 @@ intro/demo.html -> /intro/reasons.html
 
 # split profiles into multiple parts
 features/profile.html -> /features/profiles/index.html
+
+# add sections to runtimes: new and management
+features/runtimes.html -> /features/runtimes/index.html
