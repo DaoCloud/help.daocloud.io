@@ -8,11 +8,11 @@ DaoCloud 提供了两种管理账户的方式，一种为个人账户，另一�
 
 「用户中心」中的账户信息：
 
-![用户中心：账户信息](/img/screenshots/features/settings/account/user-account-info.png)
+![用户中心：账户信息](/img/screenshots/features/profiles/account/user-account-info.png)
 
 「组织中心」中的账户信息：
 
-![组织中心：账户信息](/img/screenshots/features/settings/account/org-account-info.png)
+![组织中心：账户信息](/img/screenshots/features/profiles/account/org-account-info.png)
 
 #### 账户余额
 

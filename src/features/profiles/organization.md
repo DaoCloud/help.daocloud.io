@@ -14,11 +14,11 @@
 
 「创建组织」的按钮可以在任何页面右上角的下拉菜单中找到。
 
-![控制台：账户管理](/img/screenshots/features/settings/organization/dashboard-new.png)
+![控制台：账户管理](/img/screenshots/features/profiles/organization/dashboard-new.png)
 
 也可以在[用户中心](profile.md)内「我的组织」选项卡中找到。
 
-![用户中心：我的组织](/img/screenshots/features/settings/organization/user-profile-new.png)
+![用户中心：我的组织](/img/screenshots/features/profiles/organization/user-profile-new.png)
 
 ---
 
@@ -26,7 +26,7 @@
 
 第二步：在创建组织的界面为组织指定「组织名称」，组织名称只能包含英文数字、下划线 `_`、小数点 `.`、和减号 `-`，并且不能与现有组织重名。
 
-![创建组织](/img/screenshots/features/settings/organization/new.png)
+![创建组织](/img/screenshots/features/profiles/organization/new.png)
 
 > 提示：请谨慎确定组织名称，一旦创建将无法再更改。
 
@@ -46,13 +46,13 @@
 
 在这里，您可以更改当前组织的头像、描述、地址和 URL。
 
-![组织信息](/img/screenshots/features/settings/organization/info.png)
+![组织信息](/img/screenshots/features/profiles/organization/info.png)
 
 #### 组织管理
 
 在这里，您可以邀请新成员加入组织、管理当前成员的权限和删除成员。当然，在这里您也可以删除组织。
 
-![组织管理](/img/screenshots/features/settings/organization/management.png)
+![组织管理](/img/screenshots/features/profiles/organization/management.png)
 
 > 提示：在发送新成员邀请后，新成员可以将现有账户加入组织，也可以注册新账户加入组织。
 

@@ -10,11 +10,11 @@ DaoCloud 为个人和组织分别提供一个小配额的套餐以供试用，�
 
 点击「充值」按钮后，可以输入要充值的金额并使用微信支付或支付宝进行二维码扫码充值。
 
-![充值](/img/screenshots/features/settings/payment/pay.png)
+![充值](/img/screenshots/features/profiles/payment/pay.png)
 
 在微信或支付宝确认支付后，将成功充值。
 
-![充值成功](/img/screenshots/features/settings/payment/success.png)
+![充值成功](/img/screenshots/features/profiles/payment/success.png)
 
 > 注意：个人账户与组织账户的余额和配额是完全独立的，所以请在充值前**务必**确认充值到的账户，充值后将无法将余额转移到其他账户。
 
@@ -24,6 +24,6 @@ DaoCloud 为个人和组织分别提供一个小配额的套餐以供试用，�
 
 在这里，您可以检视历史订单的金额和状态。
 
-![交易记录](/img/screenshots/features/settings/payment/history.png)
+![交易记录](/img/screenshots/features/profiles/payment/history.png)
 
 > 提示：如果在充值时没有成功，订单会在交易记录中显示「等待付款」。等待付款的订单将在一天后过期，如果还需充值，请重新执行充值操作。
