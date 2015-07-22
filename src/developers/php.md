@@ -1,167 +1,70 @@
-# 在DaoCloud上快速发布PHP应用
+### PHP 开发者的 Docker 之旅
 
-## Docker官方途径构建
+![PHP 大礼包开篇题图](http://open.daocloud.io/content/images/2015/07/php.jpg)
 
-参考链接：[https://registry.hub.docker.com/_/php/](https://registry.hub.docker.com/_/php/)
+用 PHP 作为我们「Docker 开发大礼包」开篇是带着一些朝圣的心情的。这是一门堪称「古老」的语言，这也是一门争议最多的语言，这更是一门不断涅槃的语言。「PHP 是最好的语言」这个流传已久的梗，或许正是对我国最有群众基础的编程语言描述里，最经典的注解。
 
-在这篇官方参考文档中有三个点需要注意：
- - 一半情况下我们都需要php来做web应用因此我们需要重点参考例子With Apache
- - 源码目录在`/var/www/html/`，注意复制代码进去的方式。
- - php.ini的文件夹在`/usr/local/etc/php`，注意放入配置文件的方式。
+就让我们一起回顾一下 PHP 的发展历程作为此系列文章的开篇。历史是最好的老师，他给每个未来提供启示。
 
-其他注意要素：
+##### 谁创造了 PHP？
 
- - 此image基于Debian8 可以使用apt-get但是最后。
- - 有pecl，可以自动安装php模块。
- - 在官方文档中php.ini文件复制这句文档是错误的`COPY config/php.ini /usr/local/etc/php`路径最后应该有一个斜杠。
- - 正确的写法为：`COPY config/php.ini /usr/local/etc/php/`
+Rasmus Lerdorf 在 1994 年创造了 PHP，Andi Gutmans 和 Zeev Suraski 之后于 1997 年重写了 PHP 的解析器，之后他们在以色列成立了著名的 Zend 公司来维护 PHP 的开发。
 
-## 从ubuntu开始构建
+##### PHP 是什么的缩写？
 
-请先参考[https://github.com/robychen/apache2-php5](https://github.com/robychen/apache2-php5)
+起先的意思直白的有点近乎粗鲁「Personal Home Page」，后来改成了「PHP: Hypertext Preprocessor」即便用今天的眼光看也是很酷炫的命名。
 
-Dockerfile:
-```
-FROM ubuntu:trusty
-# Ubuntu 14.04, Trusty Tahr(可靠的塔尔羊)发行版
+##### PHP 最著名的版本？
 
-# 道客船长荣誉出品
-MAINTAINER Captain Dao (support@daocloud.io)
+PHP 5 发布于 2004 年 7 月 13 日，距今正好第十一个年头。
 
-# APT自动安装PHP相关的依赖包,如需其他依赖包在此添加.
-RUN apt-get update && \
-	DEBIAN_FRONTEND=noninteractive apt-get -yq install \
-		curl \
-		wget \
-		apache2 \
-		libapache2-mod-php5 \
-		php5-mysql \
-		php5-sqlite \
-		php5-gd \
-		php5-curl \
-		php-pear \
-		php-apc && \
+##### 下一个 PHP 版本？
 
-	# 用完包管理器后安排打扫卫生可以显著的减少镜像大小.
-	apt-get clean && \
-	apt-get autoclean && \
-	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+PHP 7 计划于 2015 年 11 月 12 日发布。
 
-	# 安装Composer,此物是PHP用来管理依赖关系的工具,laravel symfony等时髦的框架会依赖它.
-	curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+##### PHP 的形象代言人？
 
-# Apache2配置文件:/etc/apache2/apache2.conf
-# 给Apache2设置一个默认服务名,避免启动时给个提示让人紧张.
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf && \
+一只蓝色的大象，因为「elePHPant」（黄色的那头是 Hadoop）。
 
-	# PHP配置文件:etc/php5/apache2/php.ini
-	# 调整PHP处理Request里变量提交值的顺序,解析顺序从左到右,后解析新值覆盖旧值.
-	# 默认设定为EGPCS(ENV/GET/POST/COOKIE/SERVER)
-	sed -i "s/variables_order.*/variables_order = \"EGPCS\"/g" /etc/php5/apache2/php.ini
+##### 谁在主导 PHP 的方向？
 
-# 配置默认放置App的目录
-RUN mkdir -p /app && rm -fr /var/www/html && ln -s /app /var/www/html
-ADD . /app
-WORKDIR /app
-RUN chmod 755 ./start.sh
+PHP Group 来维护其标准，Zend 作为商业公司提供参考实现。
 
-EXPOSE 80
-CMD ["./start.sh"]
-```
+##### HHVM 又是什么？
 
-此种方法更为灵活，适合项目依赖比较多的情况下使用。
-在start.sh中，除了设置环境变量之外，还提供了显示日志的方法。
+HipHop Virtual Machine (HHVM) 是 Facebook 对 PHP 的一次革命性衍进，HHVM 采用实时编译进程，使得 PHP 的执行效率大幅提升。Facebook 在 2013 年全面采用 HHVM 运行 PHP，间接拉升了 PHP 生态的逼格，激发了整个 PHPer 群体的活力。
 
+##### PHP 的包依赖怎么做？
 
-## 服务集成
+Composer
 
-这里以PHP添加DaoCloud中服务集成中的MySQL服务为例。
- - 按照说明文档[服务集成](http://help.daocloud.io/function/services.html)添加MySQL服务
+##### PHP 的单元测试怎么做？
 
- - 应用部署到达基础设置选择自己的MySQL服务，并会显示服务参数如下图
-![](/img/php/1.png)
+PHPUnit
 
- - 在php程序开发时使用getenv()函数来获取环境变量。
+##### 常见的 PHP 技术栈和应用场景？
 
-## DaoCloud PHP应用访问MySQL数据库实战
+LAMP（Linux + Apache + MySQL + PHP）长期占据着我国互联网应用的主流架构。即便在今天，这也是电商和社区类互联网公司的主要技术栈。尤其在电商领域，说 PHP 托起半个中国的购物车都不为过。
 
- - 根据文档[服务集成](http://help.daocloud.io/function/services.html)添加MySQL服务
- - 在控制台中选择镜像仓库，然后选择DaoCloud镜像，选择PhpMyAdmin
- - 部署最近版本，选择目标集成的MySQL数据库
- - 启动应用后，在数据库运行SQL语句，方便部署的应用查询测试用的数据
- ```
-	CREATE TABLE `test` (
-		`id` int NOT NULL AUTO_INCREMENT,
-		`data` varchar(255) NOT NULL,
-		PRIMARY KEY (`id`)
-	);
+##### 为什么 ASP 和 JSP 都没有 PHP 受众广？
 
-	insert into `test` ( `data`) values ( '1');
- ```
- - 插入数据的结果
- ![](/img/php/2.png)
+当年 FTP 比起 VPS 简直是白菜价。但这也间接养成了 PHP 开发重功能轻工程的通病，加上部署的随意性，上规模后运维虐成狗。
 
- - 例子参考：[https://github.com/lijianying10/DaoCloudPHPDemo](https://github.com/lijianying10/DaoCloudPHPDemo)
+##### 就这个运维问题，作者 Rasmus Lerdorf 怎么看？
 
-## 实例分析
+> I'm not a real programmer. I throw together things until it works then I move on. The real programmers will say “Yeah it works but you're leaking memory everywhere. Perhaps we should fix that.” I’ll just restart Apache every 10 requests.
 
-Dockerfile：
+翻译过来就是：「重启应该就有好运气」。
 
-```
-FROM php:5.6-apache
-# Docker 官方PHP5.6+apache发行版本，底层系统使用Debian
+##### 那怎么破的，能教教吗？
 
-# 道客船长荣誉出品
-MAINTAINER Captain Dao (support@daocloud.io)
+上 Docker！
 
-COPY config/php.ini /usr/local/etc/php/
-# 复制php配置文件到Image中
+欢迎进入「PHP 应用 Docker 开发大礼包 - Powered by DaoCloud」，六篇由浅入深、精心设计的系列文章，带领 PHP 开发者领略 Docker 化应用开发和发布的全新体验。
 
-COPY src/ /var/www/html/
-# 复制代码到Image中
-
-RUN docker-php-ext-install mysqli
-# 安装Mysql依赖模块
-
-EXPOSE 80
-```
-
-注意事项：
-
- - 本方法基于Docker官方的 php:5.6-apache 直接就有PHP环境
- - 可以使用插件docker-php-ext-install安装您的依赖模块
- - 不要忘记EXPOSE 80否则无法在DaoCloud中使用Web端口
-
-### 建议工作流程：
-
- 1. 克隆这个例子。
- 2. 添加您的php代码到src文件夹中
- 3. 修改php.ini到您需要的配置
- 4. 在本地调试您的Image可以大幅缩减在DaoCloud中部署调试的时间。
-	建议调试脚本：
-	```
-	docker stop daocloudphpc
-	docker rm daocloudphpc
-	docker rmi daocloudphp
-
-	docker build -t daocloudphp /root/DaoCloudPHP
-	docker run -it -d --name daocloudphpc -e "MYSQL_PORT_3306_TCP_ADDR=10.0.2.15" -e "MYSQL_USERNAME=root" -e "MYSQL_PASSWORD=1" -e "MYSQL_INSTANCE_NAME=test" -p 11210:80 daocloudphp
-	docker exec -it daocloudphpc /bin/bash
-	```
-	容器与镜像的名字可以随您的意愿更换。运行脚本可以删除容器与镜像并重新构建运行您的程序方便调试。
- 5. 部署到DaoCloud
-
-### 数据库连接参数说明
-
-index.php
-```php
-<?php
-$mysqli = new mysqli(getenv("MYSQL_PORT_3306_TCP_ADDR"), getenv("MYSQL_USERNAME"), getenv("MYSQL_PASSWORD"), getenv("MYSQL_INSTANCE_NAME"));
-// 请注意连接参数的构建，直接使用getenv方法来获取连接参数。参数名字是DaoCloud给的固定参数。
-$result = $mysqli->query("SELECT id,data FROM test");
-$row = $result->fetch_assoc();
-echo htmlentities($row['id'] . " " . $row['data']);
-?>
-```
-
-在文件中可以看到使用getenv函数来获取环境变量中的参数，也可以使用此方法写入到您需要的配置文件中。
+* [如何制作一个定制的 PHP 基础 Docker 镜像（一）](http://open.daocloud.io/ru-he-zhi-zuo-yi-ge-ding-zhi-de-php-ji-chu-docker-jing-xiang/)
+* [如何开发一个 PHP 的 Docker 化应用（二）](http://open.daocloud.io/ru-he-kai-fa-yi-ge-php-de-docker-hua-ying-yong/)
+* [如何开发一个 PHP + MySQL 的 Docker 化应用（三）](http://open.daocloud.io/ru-he-kai-fa-yi-ge-php-mysql-de-docker-hua-ying-yong/)
+* [如何配置一个 Docker 化持续集成的 PHP 开发环境（四）](http://open.daocloud.io/ru-he-pei-zhi-yi-ge-docker-hua-chi-xu-ji-cheng-de-php-kai-fa-huan-jing/)
+* [如何开发一个 PHP + NewRelic 的生产级 Docker 化应用（五）](http://open.daocloud.io/ru-he-kai-fa-yi-ge-php-newrelic-de-sheng-chan-ji-docker-hua-ying-yong/)
+* [如何开发一个 Laravel + MySQL 框架的 Docker 化应用（六）](http://open.daocloud.io/ru-he-kai-fa-yi-ge-laravel-mysql-kuang-jia-de-docker-hua-ying-yong/)

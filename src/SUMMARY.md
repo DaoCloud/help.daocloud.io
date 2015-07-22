@@ -38,4 +38,4 @@
   + [快速创建应用：phpMyAdmin](practices/phpmyadmin.md)
 * [三十分钟学 Docker](tutorials/README.md)
 * [开发者指南](developers/README.md)
-  + [在 DaoCloud 上快速发布 PHP 应用](developers/php.md)
+  + [PHP 开发者的 Docker 之旅](developers/php.md)
