@@ -9,7 +9,7 @@ v1.0/docs/configure-daocloud-ci/index.html -> /features/continuous-integration/i
 v1.0/docs/configure/index.html -> /intro/accelerator.html
 v1.0/docs/daocloud-2/index.html -> /intro/reasons.html
 v1.0/docs/daocloud-yml/index.html -> /features/continuous-integration/daocloud-yml.html
-v1.0/docs/deer-resume/index.html -> /practices/deer-resume.html
+v1.0/docs/deer-resume/index.html -> /practices/index.html
 v1.0/docs/demo/index.html -> /intro/reasons.html
 v1.0/docs/deploy/index.html -> /features/deployment.html
 v1.0/docs/earth/index.html -> /practices/earth.html
@@ -48,7 +48,7 @@ function/deploy.html -> /features/deployment.html
 
 practice/index.html -> /practices/index.html
 practice/ghost-blog.html -> /practices/ghost-blog.html
-practice/deer-resume.html -> /practices/deer-resume.html
+practice/deer-resume.html -> /practices/index.html
 practice/earth.html -> /practices/earth.html
 practice/phpmyadmin.html -> /practices/phpmyadmin.html
 practice/mongo-express.html -> /practices/mongo-express.html
@@ -68,3 +68,6 @@ features/profile.html -> /features/profiles/index.html
 
 # add sections to runtimes: new and management
 features/runtimes.html -> /features/runtimes/index.html
+
+# remove deer-resume
+/practices/deer-resume.html -> /practices/index.html

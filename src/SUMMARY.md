@@ -31,7 +31,6 @@
     <!-- - [公有云]() -->
     <!-- - [自有主机]() -->
 * [快速实践](practices/README.md)
-  + [快速创建应用：DeerResume](practices/deer-resume.md)
   + [快速创建应用：earth](practices/earth.md)
   + [快速创建应用：Ghost 博客](practices/ghost-blog.md)
   + [快速创建应用：Mongo Express](practices/mongo-express.md)

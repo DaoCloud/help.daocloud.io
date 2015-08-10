@@ -4,7 +4,6 @@
 
 包括：
 
-* [DeerResume](deer-resume.md)
 * [earth](earth.md)
 * [Ghost 博客](ghost-blog.md)
 * [Mongo Express](mongo-express.md)
