@@ -5,7 +5,7 @@
 包含：
 
 * [账户信息](account.md)
-* [用户中心](profile.md)
+* [用户中心](user.md)
 * [组织中心](organization.md)
 * [账户充值](payment.md)
 

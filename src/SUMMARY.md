@@ -21,7 +21,7 @@
     <!-- - [Dockerfile]() -->
   + [持续集成](features/continuous-integration/README.md)
     - [daocloud.yml](features/continuous-integration/daocloud-yml.md)
-  + [镜像仓库](features/packages.md)
+  + [镜像仓库](features/packages.md) <!-- Update: Docker Hub -->
   + [服务集成](features/services.md)
   + [自有主机](features/runtimes/README.md)
     - [添加主机](features/runtimes/new.md)

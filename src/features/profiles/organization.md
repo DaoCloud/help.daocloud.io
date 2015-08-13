@@ -16,7 +16,7 @@
 
 ![控制台：账户管理](/img/screenshots/features/profiles/organization/dashboard-new.png)
 
-也可以在[用户中心](profile.md)内「我的组织」选项卡中找到。
+也可以在[用户中心](user.md)内「我的组织」选项卡中找到。
 
 ![用户中心：我的组织](/img/screenshots/features/profiles/organization/user-profile-new.png)
 
