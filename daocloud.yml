@@ -1,0 +1,17 @@
+image: daocloud/ci-node:0.12
+
+env:
+  - GITBOOK_VERSION = 2.1.0
+
+install:
+  - npm --registry=http://registry.npm.taobao.org -g install gitbook-cli
+  - mkdir -p ~/.gitbook/versions/
+  - npm --registry=http://registry.npm.taobao.org install gitbook@$GITBOOK_VERSION
+  - mv node_modules/gitbook ~/.gitbook/versions/$GITBOOK_VERSION
+  - rm -rf node_modules
+
+before_script:
+  - make
+
+script:
+  - make test
