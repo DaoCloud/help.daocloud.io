@@ -27,6 +27,7 @@
     - [添加主机](features/runtimes/new.md)
     - [管理主机](features/runtimes/management.md)
   + [应用部署](features/deployment.md)
+    - [DockerCompose YML](features/docker_compose_yml.md)
   <!-- + [应用管理]() -->
     <!-- - [公有云]() -->
     <!-- - [自有主机]() -->
