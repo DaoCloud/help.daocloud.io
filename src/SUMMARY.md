@@ -16,8 +16,8 @@
     - [组织中心](features/profiles/organization.md)
     - [账户充值](features/profiles/payment.md)
     <!-- - [账户切换]() -->
-  + [代码构建](features/build-flows.md)
-    <!-- - [代码源]() -->
+  + [代码构建](features/image-build/README.md)
+    - [代码源](features/image-build/git_remote.md)
     <!-- - [Dockerfile]() -->
   + [持续集成](features/continuous-integration/README.md)
     - [daocloud.yml](features/continuous-integration/daocloud-yml.md)
