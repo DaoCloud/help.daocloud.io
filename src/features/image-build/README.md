@@ -47,7 +47,7 @@
 
 第七步：设置「持续集成」，由于 `dao-2048` 没有持续集成的配置文件，这里可以设置为关闭。如果您的其他项目希望使用 DaoCloud 提供的持续集成服务，请将「持续集成」设置为「已开启」。
 
-> 提示：要使用持续集成功能，请参阅[「持续集成」](continuous-integration/README.md)。
+> 提示：要使用持续集成功能，请参阅[「持续集成」](../continuous-integration/README.md)。
 
 ---
 
@@ -124,6 +124,6 @@
 
 下面您可以：
 
-* 了解如何用 DaoCloud 进行持续集成：参考[持续集成](continuous-integration/README.md)。
+* 了解如何用 DaoCloud 进行持续集成：参考[持续集成](../continuous-integration/README.md)。
 * 了解如何用为应用准备一个数据库服务：参考[服务集成](../services.md)。
 * 了解如何部署一个刚刚构建好的应用镜像：参考[应用部署](../deployment.md)。
