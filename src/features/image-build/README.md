@@ -125,5 +125,5 @@
 下面您可以：
 
 * 了解如何用 DaoCloud 进行持续集成：参考[持续集成](continuous-integration/README.md)。
-* 了解如何用为应用准备一个数据库服务：参考[服务集成](services.md)。
-* 了解如何部署一个刚刚构建好的应用镜像：参考[应用部署](deployment.md)。
+* 了解如何用为应用准备一个数据库服务：参考[服务集成](../services.md)。
+* 了解如何部署一个刚刚构建好的应用镜像：参考[应用部署](../deployment.md)。
