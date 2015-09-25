@@ -9,4 +9,4 @@
 * [组织中心](organization.md)
 * [账户充值](payment.md)
 
-> 提示：如果您已经迫不及待想要试用 DaoCloud 平台，请直接移步「[代码构建](../build-flows.md)」。
+> 提示：如果您已经迫不及待想要试用 DaoCloud 平台，请直接移步「[代码构建](../image-build/README.md)」。

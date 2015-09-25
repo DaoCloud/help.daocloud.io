@@ -5,7 +5,7 @@
 包括：
 
 * [账户管理](profiles/README.md)
-* [代码构建](build-flows.md)
+* [代码构建](image-build/README.md)
 * [持续集成](continuous-integration/README.md)
 * [镜像仓库](packages.md)
 * [服务集成](services.md)
