@@ -89,3 +89,5 @@ script:
   - cat $TEST_COVERAGE
 
 ```
+
+![持续集成：测试结果](/img/screenshots/features/build-flows/test-result.png)
